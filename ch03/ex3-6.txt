@@ -1,0 +1,16 @@
+예제 3-6 Epoll 서버 실행 오류
+
+Exception in thread "main" java.lang.ExceptionInInitializerError
+       at io.netty.channel.epoll.EpollEventLoop.<init>(EpollEventLoop.java:70)
+       at io.netty.channel.epoll.EpollEventLoopGroup.newChild(EpollEventLoopGroup.java:73)
+       at io.netty.channel.MultithreadEventLoopGroup.newChild(MultithreadEventLoopGroup.java:1)
+       at io.netty.util.concurrent.MultithreadEventExecutorGroup.<init>(MultithreadEventExecutorGroup.java:77)
+       at io.netty.util.concurrent.MultithreadEventExecutorGroup.<init>(MultithreadEventExecutorGroup.java:48)
+       at io.netty.channel.MultithreadEventLoopGroup.<init>(MultithreadEventLoopGroup.java:59)
+       at io.netty.channel.epoll.EpollEventLoopGroup.<init>(EpollEventLoopGroup.java:58)
+       at io.netty.channel.epoll.EpollEventLoopGroup.<init>(EpollEventLoopGroup.java:50)
+       at io.netty.channel.epoll.EpollEventLoopGroup.<init>(EpollEventLoopGroup.java:43)
+       at com.github.nettybook.ch3.EpollEchoServer.main(EpollEchoServer.java:14)
+Caused by: java.lang.IllegalStateException: Only supported on Linux
+       at io.netty.channel.epoll.Native.<clinit>(Native.java:44)
+       ... 10 more
