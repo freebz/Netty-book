@@ -1,0 +1,22 @@
+<!-- 예제 8-19 JUnit 의존성 추가 -->
+
+<project xmlns="http://maven.apache.org/POM/4.0.0"
+	 xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	 xsi:schemaLocation="http://maven.apache.org/POM/4.0.0
+			     http://maven.apache.org/xsd/maven-4.0.0.xsd">
+        ... 생략 ...
+
+    <dependencies>
+... 생략 ...
+
+	<dependency>
+	    <groupId>junit</groupId>
+	    <artifactId>junit</artifactId>
+	    <version>4.12</version>
+	</dependency>
+
+    </dependencies>
+
+... 생략 ...
+
+</project>

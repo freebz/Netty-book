@@ -1,0 +1,36 @@
+<!-- 예제 8-7 pom.xml에 Exec goal 추가 -->
+
+<project xmlns="http://maven.apache.org/POM/4.0.0"
+	 xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+
+... 생략 ...
+
+    <dependencies>
+	<dependency>
+	    <groupId>io.netty</groupId>
+	    <artifactId>netty-all</artifactId>
+	    <version>4.0.28.Final</version>
+	</dependency>
+    </dependencies>
+
+    <build>
+	<plugins>
+	    <plugin>
+		<groupId>org.codehaus.mojo</groupId>
+		<artifactId>exec-maven-plugin</artifactId>
+		<version>1.4.0</version>
+		<executions>
+		    <exection>
+			<goals>
+			    <goal>java</goal>
+			</goals>
+		    </execution>
+		</executions>
+		<configuration>
+		    <mainClass>com.github.nettybook.ch8.TelnetServer</mainClass>
+		</configuration>
+	    </plugin>
+	</plugins>
+    </build>
+
+</project>
