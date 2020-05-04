@@ -1,0 +1,7 @@
+예제 9-9 토큰 발급 예
+
+token:kris@foobar.com = {
+       issueDate:"1437326138",
+       email:"kris@foobar.com",
+       expire:"1438498539"
+}

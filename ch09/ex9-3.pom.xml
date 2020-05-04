@@ -1,0 +1,19 @@
+<!-- 예제 9-3 데이터 저장소 접근 라이브러리 의존성 추가 -->
+
+<project xmlns="http://maven.apache.org/POM/4.0.0"
+	 xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	 xsi:schemaLocation="http://maven.apache.org/POM/4.0.0
+			     http://maven.apache.org/xsd/maven-4.0.0.xsd">
+
+    ... 생략 ...
+
+    <dependencies>
+    ... 생략 ...
+	<dependency>
+	    <groupId>org.mybatis</groupId>
+	    <vartifactId>mybatis</artifactId>
+	    <version>3.3.0</version>
+	</dependency>
+    ... 생략 ...
+    </dependencies>
+</project>
